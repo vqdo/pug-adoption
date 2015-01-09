@@ -1,0 +1,1017 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family: 'ribbonregular';
+    src: url('../fonts/ribbon-webfont.eot');
+    src: url('../fonts/ribbon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ribbon-webfont.woff2') format('woff2'),
+         url('../fontsribbon-webfont.woff') format('woff'),
+         url('../fonts/ribbon-webfont.ttf') format('truetype'),
+         url('../ribbon-webfont.svg#ribbonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futuramedium';
+    src: url('../fonts/futura-medium-webfont.eot');
+    src: url('../fonts/futura-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futura-medium-webfont.woff2') format('woff2'),
+         url('../fonts/futura-medium-webfont.woff') format('woff'),
+         url('../fonts/futura-medium-webfont.ttf') format('truetype'),
+         url('../fonts/futura-medium-webfont.svg#futuramedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*****************************************
+ *** BASIC
+ ****************************************/
+
+body {
+    background: url("../images/bg.jpg") #fffef9 ;
+    
+}
+body, p {
+    font: normal 14px Montserrat, Arial, sans-serif;    
+}
+a {
+    color: #2f4e61;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin: auto;
+    width: 1024px;
+}
+.content {
+    padding: 20px;
+}
+
+/*****************************************
+ *** HEADER
+ ****************************************/
+ 
+header {
+    width: 100%;
+    padding: 30px 0;
+}
+#site-nav {
+    width: 100%;
+    position: fixed;
+        top: 0;
+    z-index: 2;
+}
+#site-nav .headerlogo {
+    content:url("../images/logo_nav.png");
+    position: absolute;
+    width: 170px;
+    top:5px;
+    float:left;
+}
+
+#site-nav a{
+    color: #fdf9e1;    
+    font: normal 20px "futuramedium", Arial, sans-serif;
+    float: right;
+    line-height: 50px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+#site-nav a:hover {
+    color: #FFF;
+}
+#site-nav .bg {
+    background: #2f4e61;
+    border-bottom: 1px solid #FFF;    
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#site-nav .highlighted-link {
+    background: #f2846c;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.1);    
+    display: block;
+    color: #FFF;
+    font: normal 24px "futuramedium", Arial, sans-serif;    
+    margin: 0 10px;    
+    padding: 8px 15px 20px 15px;
+}
+#site-nav .highlighted-link:hover {
+    padding: 15px 15px 20px 15px;
+}
+.searchbox {
+    margin: 1em;
+    font: "futuramedium", Arial, sans-serif;
+    
+}
+
+
+h1, .main-title a {
+    font: bold 45px "ribbonregular", Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.main-title {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+}
+.logo {
+    background: url("../images/logo.png")  #f2846c;
+    border: 5px solid #FFF;
+    border-radius: 250px;    
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+}
+.main-title:hover .logo {
+    border: 5px solid #2f4e61;
+}
+
+/*****************************************
+ *** FOOTER
+ ****************************************/
+ footer {
+     background: #f2846c; 
+     color: #FFF;
+     padding: 20px 0 40px 0;
+ }
+ footer a, footer li {
+     color: #fdf9e1;
+     font: normal 14px "futuramedium", Arial, sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     line-height: 2;
+ }
+ footer section {
+     float: left;
+     line-height: 2;
+     margin: 0 30px 0 0;
+     width: 170px;
+ }
+footer section a img{
+    max-height: 30px;
+    width:auto;
+    float:left;
+ }
+footer section.large {
+     width: 250px;
+}
+footer h2 {
+     /*border-bottom: 1px solid #004578;     */
+     color: #FFF; 
+     font: bold 18px "futuramedium", Arial, sans-serif;
+     padding: 5px 0;
+     margin: 10px 0;
+     text-transform: uppercase;
+}
+ 
+
+/*****************************************
+ *** BODY
+ ****************************************/
+.page-body {
+    min-height: 500px;
+    padding-top: 20px;
+}
+.page-body a {
+    
+}
+.page-body .container {
+    margin: auto;    
+}
+.page-body .tab-container a {
+    color: #FFF;
+}
+/* Page navigation - Main */
+.page-body .page-tabs a {
+    background: #576e80;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 1px 0 2px rgba(0,0,0, 0.1) inset;
+    display: inline-block;
+    font: normal 28px "futuramedium", Arial, sans-serif;
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 226px;
+}
+.page-body .content {
+    background: #2f4e61; 
+    min-height: 500px;
+}
+/* Page Navigation - Sub */
+.page-body .page-tabs-sub {
+    background: #2f4e61;
+    display: none;
+    font: normal 24px "futuramedium", Arial, sans-serif;    
+    min-height: 60px;
+}
+.page-body .page-tabs-sub a {
+    float: left;   
+    padding: 15px 15px;
+}
+.sub-nav {
+    display: none;
+}
+.tab-adoption .sub-nav.tab-adoption ,
+.tab-pugs101 .sub-nav.tab-pugs101,
+.tab-forum .sub-nav.tab-forum,
+.tab-blog .sub-nav.tab-blog {
+    display: block;
+}
+.tab-adoption .page-tabs .tab-adoption,
+.tab-pugs101 .page-tabs .tab-pugs101,
+.tab-forum .page-tabs .tab-forum,
+.tab-blog .page-tabs .tab-blog {
+    background: #2f4e61;
+}
+
+/*****************************************
+ *** Homepage
+ ****************************************/
+
+.adoption-box{
+    display: inline-block;
+    width: 375px;
+    height: 470px;
+    padding: 15px;
+    background: #f2846c;
+    position: relative;
+        top: -60px;
+        left: 20px;
+    float: left;    
+    border: 2px dotted #fffef9;
+    border-radius: 10px;
+    z-index: 1;
+}
+.adoption-box h1{
+    font: bold 48px "ribbonregular", Arial, sans-serif;
+    color: #fffef9;
+    text-align: center;
+    text-transform: uppercase;
+}
+.adoption-box input[type=text]{
+    border: 1px dotted #999;
+  border-radius: 0;
+
+  -webkit-appearance: none;
+    
+}
+.adoption-box input{
+    margin-top: 25px;
+    width: 200px;
+    height: auto;
+    border-radius: 25px;
+    font: 14px "futuramedium", Arial, sans-serif;
+    background: #fffef9;
+    color: #f2846c;
+    text-align: left;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For all Gecko based browsers */
+          box-sizing: border-box;
+    z-index: 1;
+}
+.adoption-box form{
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    background: #fffef9;
+    border-radius: 10px;
+    padding: 15px;
+}
+.adoption-box a h2{
+    display: inline-block;
+    position: relative;
+    top: -75px;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    border-radius: 25px;
+    font: 20px "futuramedium", Arial, sans-serif;
+    background: #576e80;
+    color: #fffef9;
+    text-align: center;
+    text-decoration: none;
+}
+.featured-dog-box{
+    display: inline-block;
+    width: 475px;
+    height: 410px;
+    padding: 0px 0px 0px 0px;
+    background: #fffef9;
+    margin: 0px 0px 0px 50px;
+    padding: 15px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+}
+.featured-dog-box h1{
+    font: bold 24px "futuramedium", Arial, sans-serif;
+    border-bottom: 2px dotted #2f4e61;
+    color: #2f4e61;
+    text-transform: uppercase;
+}
+#featured-pug{
+    background: #FFF;
+    width: 240px;
+    height: auto;
+    float: left;
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+#featured-description{
+    color: #666;
+    margin-top: 12px;
+    font: 16px "futuramedium", sans-serif;
+    max-height: 335px;
+    text-align: left;
+    margin-left: 5px;
+}
+#featured-button{
+    width: 100px;
+    height: 25px;
+    background: #2f4e61;
+    border-radius: 10px;
+    color: #FFF;
+    margin-top: 5px;
+    margin-right: -5px;
+    padding-top: 5px;
+    text-align: center;
+    font: bold 14px "futuramedium", sans-serif;
+    float: right;
+}
+#featured-button:hover{
+    background: #576e80;
+}
+#featured-button a{
+    color: #FFF;
+    text-decoration: none;
+}
+.blog-heading h1{
+    font: 48px "ribbonregular", Arial, sans-serif;
+    color: #fffef9;
+    padding: 0px 20px;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+}
+.articles-container {
+    border-right: 1px dotted #132c3c;
+    width: 620px;
+    margin-top: 15px;    
+}
+.pug-articles{
+    width: 550px;
+    height: 200px;
+    background: #fffef9;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    float: left;
+}
+.pug-articles h1{
+    color: #2f4e61;
+    font: bold 36px "futuramedium", Arial, sans-serif;
+}
+.pug-articles h3{
+    color: #f2846c;
+    font: 24px "futuramedium", Arial, sans-serif;
+    border-bottom: 2px dotted #2f4e61;
+}
+.pug-articles p{
+    color: #2f4e61;
+    font: 14px "futuramedium", Arial, sans-serif;
+    max-width: 500px;
+}
+.pug-articles a h5{
+    font: italic 15px "futuramedium", Arial, sans-serif;
+    color: #2f4e61;
+    float: right;
+}
+.pug-articles a h5:hover{
+    text-decoration: underline;
+}
+.pug-pics {
+    width: 360px;
+    padding: 20px 0;
+}
+.pug-pics img {
+    width: 135px;
+    height: 135px;
+    margin:15px;
+    border-radius: 25px;
+    float: right;
+    opacity: 0.9;
+    border: 2px dotted #fffef9;
+}
+.pug-pics img:hover {
+    opacity: 1;
+    border: 2px solid #FFF;
+}
+.homepug {
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6) inset;    
+    background: url('../images/lookingup.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+}
+/*****************************************
+ *** Pugs 101
+ ****************************************/
+.pugs-main{
+    text-align: center;
+    margin: 0px 0px;
+}
+.pugs-logo{
+    background: url("../images/orange_header.png") no-repeat;
+    background-size: cover;
+    /*background: #f2846c;*/
+    border-radius: 10px;
+    width: 1024px;
+    height: auto;
+    margin: 30px auto;
+}
+.pugs-logo h1 {
+    padding: 30px;
+    color: #2f4e61;
+}
+.pugs-logo:hover a, .pugs-logo:hover h1 {
+    color: #FFF;
+    text-decoration: none;
+}
+.pugs-101-pug{
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6) inset;
+    background: url('../images/babyflowerpug.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+}
+.pugs-101-pug h1{
+    font: 48px "ribbonregular", Arial, sans-serif;
+    color: #fffef9;
+    text-align: left;
+    position: relative;
+}
+
+.page-body .page-tabs-sub .tab-pugs101  {
+    background: #f2846c;
+    padding: 20px 150px;
+    /*font: normal 24px Montserrat, Arial, sans-serif;    
+    min-height: 60px;*/
+}
+.page-body .page-tabs-sub .tab-pugs101 a {
+    float: left;   
+    padding: 5px
+}
+.underline {
+    /*border-bottom: 2px dotted #fffef9;*/
+}
+/*.page-tabs .tab-pugs101 {*/
+/*    background: #fffef9;*/
+/*    padding: 0 20px;*/
+/*}*/
+.sub-nav.tab-pugs101 li {
+    border: none;
+    float: left;
+    width: 280px;
+}
+.sub-nav.tab-pugs101 li:last-child {
+    width: 150px;
+}
+.sub-nav.tab-pugs101 li li{
+    display: block;
+    font: normal 16px "futuramedium";
+}
+.sub-nav.tab-pugs101 li li a {
+    color: #2f4e61;    
+    text-transform: uppercase;
+}
+.roundbox {
+    background: #fffef9;
+    border-radius: 10px;    
+}
+#pugs101 .page-body h1 {
+    display: block;
+    text-align: center;
+    color: #fffef9;
+    margin: 20px auto;
+    border-bottom: 2px dotted #fffef9;
+}
+.roundbox p{
+    line-height: 1.5;
+    padding: 25px;
+    color: #2f4e61;
+    font: 18px "futuramedium", Arial, sans-serif;
+}
+
+/* basic facts */
+.facts-table {
+    background: #fffef9;
+    border-radius: 15px;
+    width: 600px;
+}
+.facts-table td {
+    padding: 20px;    
+}
+.facts-table td, .facts-table p {
+    font: normal 16px "futuramedium", Arial, sans-serif;
+    line-height: 1.5;
+}
+.facts-table .title {
+    font: bold 18px "futuramedium", Arial, sans-serif;
+    width: 30%;
+}
+.infotable-pic {
+    position: relative;
+        top: 65px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 10px;
+}
+/*****************************************
+ *** Pugs 101: Health
+ ****************************************/
+.pugs-101-health{
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6) inset;
+    background: url('../images/soulpug.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+}
+.health-description {
+    width: 50%;
+    margin: 10px;
+    float: left;
+    background: #fffef9;
+    border-radius: 10px;
+}
+.health-description h1{
+    font: 48px "ribbonregular", Arial, sans-serif;
+    color: #fffef9;
+    text-align: left;
+}
+.healthypugs{
+    width: 450px;
+    margin: 115px 0px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.health-description p{
+
+    line-height: 1.5;
+    padding: 25px;
+    color: #2f4e61;
+    font: 18px "futuramedium", Arial, sans-serif;
+}
+.health-description p a{
+    color: #f2846c;
+}
+/*****************************************
+ *** Pugs 101: Training
+ ****************************************/
+.pugs-101-training{
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6) inset;
+    background: url('../images/pugtricks.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+}
+.train-description {
+    width: 50%;
+    margin: 10px;
+    float: left;
+    background: #fffef9;
+    border-radius: 10px;
+}
+.train-description h1{
+    font: 48px "ribbonregular", Arial, sans-serif;
+    color: #fffef9;
+    text-align: left;
+}
+.pugtricks{
+    width: 450px;
+    margin: 15px 0px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.train-description p{
+    line-height: 1.5;
+    padding: 25px;
+    color: #2f4e61;
+    font: 18px "futuramedium", Arial, sans-serif;
+}
+.train-description p a{
+    color: #f2846c;
+}
+/*****************************************
+ *** Forum
+ ****************************************/
+.forum-table {
+    background: #FFF;
+    width: 100%;
+    margin: 0 0 20px 0;
+ }
+.forum-table thead {
+    background: #f2846c;
+    color: #2f4e61;
+    font: bold 24px "futuramedium", Arial, sans-serif;
+}
+.forum-table thead td {
+    border: 0;
+}
+.forum-table tr:nth-child(even) {
+    background: #EFEFEF;
+}
+.forum-table tbody tr:hover strong a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.forum-table td {
+    border: 1px solid #DDD;
+    padding: 10px;
+    line-height: 100%;
+    text-align: center;
+}
+.forum-table td:first-child {
+    text-align: left;
+}
+.forum-table strong, .forum-table a {
+    color: #f2846c;
+    font: normal 24px "futuramedium", Arial, sans-serif;    
+} 
+.board-title a {
+    display: block;
+}
+.forum-intro {
+    background: #FFF;
+    border: 1px solid #EEE;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+.forum-intro p, .forum-intro h1 {
+    padding: 5px 10px;      
+}
+.forum-intro h1 {
+    background: #f2846c;
+    color: #FFF;
+    border-bottom: 1px solid #999;
+    font: bold 14px "futuramedium", Arial, sans-serif;
+    margin: 0 0 10px 0;
+}
+.recent-posts thead {
+    font-size: 18px;
+}
+.recent-posts strong a {
+    font-size: 18px;
+    padding: 0 0 5px 0;
+}
+.recent-posts .board-subtitle {
+    color: #333;
+    font-size: 12px;
+}
+.recent-posts td.byline {
+    border-left: none;
+    width: 200px;
+}
+.recent-posts .byline a, .recent-posts .byline {
+    font-size: 12px;
+}
+
+.col-subject {
+    width: 50%;
+}
+.col-date {
+    width: 25%;
+}
+
+/*****************************************
+ *** Adoption
+ ****************************************/
+
+.col-half {
+    float: left;
+    width: 50%;
+}
+.pug-entry-container {
+    margin: 20px;    
+    display: none; /* initially display none to allow ui fade in effect */
+}
+.pug-entry {
+    background: #FFF;
+    border-radius: 15px 15px 0 0;    
+    padding: 15px;
+}
+.pug-entry h1 {
+    display: inline-block;
+    font: bold 48px "ribbonregular", Arial, sans-serif;
+    padding: 0 10px 5px 0;
+    float: left;
+    color: #334D62;
+}
+.pug-entry .basic-info {
+    float: left;
+    padding: 5px;
+}
+
+.pug-entry .basic-info span {
+    display: block;
+}
+.pug-entry img {
+    max-width: 100%;
+    padding: 10px 0;
+}
+.pug-entry .pug-organization {
+    
+}
+.pug-entry .pug-description {
+    display: none;
+    padding: 10px 0 0 0;
+}
+.pug-description p {
+    color: #666;
+    font: normal 14px Arial, sans-serif;  
+    line-height: 1.5;    
+}
+/* adopt button */
+.adopt-link {
+    width: 100px;
+    background: #2f4e61;
+    border-radius: 10px;
+    color: #FFF;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    font: bold 16px "futuramedium", sans-serif;
+    float: right;
+}
+
+.adopt-link:hover{
+    background: #576e80;
+}
+.adopt-link a{
+    color: #FFF;
+    text-decoration: none;
+
+}
+/* See more container */
+.expandprompt {
+    background: #576e80;
+    border: 0;
+    border-radius: 0 0 15px 15px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+.expandprompt.open, .pug-entry-container:hover .expandprompt {
+    background: #f2846c;
+}
+
+/** Adoption Search */
+
+.adoption-search-main {
+    background: #f2846c;
+    border-radius: 15px;
+    padding: 20px 40px;
+}
+.adoption-search-main {
+    color: #2f4e61;
+}
+.adoption-search-main h2 {
+    color: #FFF;
+    font: normal 96px "ribbonregular", Arial, sans-serif;
+    line-height: 100px;
+    padding: 0 0 20px 0;
+    width: 500px;
+    text-transform: uppercase;
+}
+.adoption-search-main label {
+    color: #FFF;
+    display: block;
+    text-align: right;
+    font: normal 18px "futuramedium", Arial, sans-serif;
+    padding: 10px 0;
+}
+.adoption-search-main input {
+    background: #FFF;
+    border-radius: 10px;
+    display: block;
+    border: 0;
+    padding: 10px;
+    font: normal 18px "futuramedium", Arial, sans-serif;
+    width: 300px;
+}
+.adoption-search-main .field {
+   margin: 10px 0;
+}
+.adoption-search-main .pug-search-button {
+    background: #2f4e61;
+    border: 0;
+    border-radius: 10px;
+    color: #FFF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*****************************************
+ *** Blog
+ ****************************************/
+.blog-pug{
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6) inset;
+    background: url('../images/buddy.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 450px;
+    overflow: hidden;
+    width: 100%;
+}
+.blog-heading a:hover{
+    text-decoration: none;
+}
+.blog-articles{
+    width: 94%;
+    height: auto;
+    background: #fffef9;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    float: left;
+}
+.blog-articles h1{
+    display: inline;
+    text-align: left;
+    color: #2f4e61;
+    font: bold 48px "ribbonregular", Arial, sans-serif;
+}
+.blog-articles h2{
+    text-align: right;
+    float: right;
+    color: #2f4e61;
+    font: 18px "futuramedium", sans-serif;
+}
+.blog-articles h3{
+    text-align: left;
+    color: #f2846c;
+    font: 32px "futuramedium", Arial, sans-serif;
+    border-bottom: 2px dotted #2f4e61;
+}
+.blog-articles p{
+    color: #2f4e61;
+    font: 18px "futuramedium", Arial, sans-serif;
+    padding: 25px 0px;
+    border-bottom: 2px dotted #2f4e61;
+    text-align: left;
+}
+.blog-articles img{
+    width: 95%;
+    margin: 15px 0;
+}
+.blog-articles a img{
+    max-height: 30px;
+    width:auto;
+    margin-top: 5px;
+    float: right;
+}
+.blog-articles a h5:hover{
+    text-decoration: underline;
+}
+.blog-prev{
+    color: #fffef9;
+    float: right;
+}
+.blog-next{
+    color: #fffef9;
+    float: left;
+}
+
+
+/**
+* Info page styles */
+.breadcrumbs {
+  /*margin: 10px 0;*/
+}
+.page-content {
+    padding: 0 0 20px 0;
+}
+.page-content h1 {
+  color: #FFF;
+  font: normal 48px Lora, Georgia, sans-serif;
+  width: 100%;
+  height: 140px;
+  margin: 10px 0;
+  position: relative;
+}
+.page-title {
+  background: #0061A9;      
+  padding: 0 20px;  
+  position: absolute;
+      bottom: 0;
+}
+ 
+/*****************************************
+ *** Utility
+ ****************************************/
+ 
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.center {
+    margin: auto;
+    text-align: center;
+}
+ 
+ /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
