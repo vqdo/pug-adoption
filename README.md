@@ -1,11 +1,7 @@
 LIVE SITE
 ===============
 
-https://pugspugspugs-vqdo1.c9.io/index.php
-
-ONLINE README
-===============
-https://pugspugspugs-vqdo1.c9.io/README.md
+http://pugs.victoriado.com
 
 GROUP MEMBERS
 ===============
